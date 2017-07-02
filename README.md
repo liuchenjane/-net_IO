@@ -21,3 +21,13 @@ int select(int nfds, fd_set * readfds, fd_set * writefds, fd_set * errorfds, str
 [用select提高服务器的处理能力](https://github.com/liuchenjane/-net_IO/blob/master/server.cpp)<br>
 [相应的客户端](https://github.com/liuchenjane/-net_IO/blob/master/client.cpp)<br>
 
+## 2.poll函数  <br>
+
+```c
+#include <poll.h>
+int poll(struct pollfd * fds, unsigned int fds, int timeout);
+```
+<br>
+
+[使用poll函数的TCP服务器](https://github.com/liuchenjane/-net_IO/blob/master/poll_tcp_ip/server.cpp)<br>
+[使用poll函数的TCP客户端](https://github.com/liuchenjane/-net_IO/blob/master/poll_tcp_ip/client.cpp)<br>
